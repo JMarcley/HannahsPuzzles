@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- CSS (load bootstrap) -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/1.css">
+  <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet' type='text/css'>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"> </script>
+  <script src="js/1.js"> </script>
+
+</head>
+
+<!-- apply our angular app to our site -->
+<body style="padding-bottom:60px">
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="../index.htm">Hannah's Puzzles</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="new"><a href="#"><span class="label label-warning">Puzzle #1</span></a></li>
+      <li class="new"><a href="../recreational_math/index.htm"><span class="label label-success">Math</span></a></li>
+      <li class="new"><a href="../countdown/1.htm"><span class="label label-primary">Countdown #1</span></a></li>
+    </ul>
+  </nav>
+
+  <div class="background">
+
+    <div id="puzzle">
+      <p id="main-text"></p>
+
+    </div>
+    <!-- <div id="floating-panel">
+      <input onclick="removeOverlay();" type=button value="Remove overlay">
+      <input onclick="addOverlay();" type=button value="Restore overlay">
+    </div> -->
+    <div class="row">
+      <div id="instructions"class="col-md-3">
+        <p>
+          Hidden throughout the map are a number of letters. When unscrambled
+          they form a short message. Can you find them?
+          <br><br>
+          Hint: Try zooming in on locations where our paths are likely to cross. Start
+          where they have already...
+        </p>
+      </div>
+
+      <div id="map" class="col-md-9"></div>
+
+    </div>
+
+    <!-- clues:
+    where we met ...more or less
+    great spot for a cappuccino
+    midnight luke-warm tub
+    a most memorable laundry room
+    potential skiing spot
+    come for jazz stay for sazerac
+    kayakamping destination
+    see the sunrise and sunset over different ocean in the same day
+    diamonds, waffles, chocolate…
+    remote fall location
+    remote fall location
+
+    a place that would be much “smaller” under your reign
+    more hikers and climbers per capita than any other city, probably
+    sex, drugs, and BIKES
+    where the dream of the 90s is alive and where the hipsters are still hipsters
+    home of the corpus iuris civils
+    zombacalypse meeting spot -->
+
+
+
+
+  </div>
+
+
+
+
+
+  <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9bMKqDOH6HMD5TZ15nb5WyCKqo_nuUEM&callback=initMap">
+  </script>
+</body>
+</html>

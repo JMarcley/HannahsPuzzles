@@ -1,0 +1,66 @@
+#floating-panel {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+.navbar {
+  border-radius:0; margin-bottom: 0
+  }
+
+.new {
+  font-weight: bold;
+  font-size: 18px
+}
+
+.strong, .language {
+   font-weight: bold
+   }
+
+html, body {
+  height: 100%; margin: 0; padding: 0
+  }
+
+body {
+  background-color: #000000
+  }
+
+#instructions {
+  margin-left: 10px;
+  margin-top: 30px;
+  padding-left: 20px;
+  color: #555555;
+  font-size: 16px
+}
+
+#map {
+  height: 100%;
+  width: 70%;
+  margin-top: 15px;
+  /*position: absolute;
+  right: 2%*/
+  }
+
+.row {
+  height:90%
+}
+
+.background {
+  background-size: 100% 100%; height: 100%; background-image: url("../images/bg-halloween.jpg"); background-repeat: no-repeat
+  }
+
+#puzzle {
+  margin: auto; width: 623px
+  }
+
+#main-text {
+  font-family: "Creepster", "cursive"; font-size: 80px; color: orange
+  }

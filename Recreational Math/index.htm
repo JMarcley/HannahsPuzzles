@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- CSS (load bootstrap) -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/flipclock.css">
+  <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet' type='text/css'>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"> </script>
+  <script src="../js/flipclock.min.js"> </script>
+
+  <style>
+    .navbar { border-radius:0; margin-bottom: 0}
+    .strong, .language { font-weight: bold }
+    hr { margin: 0px -10px;
+      border: 0;
+      height: 1px;
+      background: #333;
+      background-image: linear-gradient(to right, #ccc, #333, #ccc); }
+    #education p { margin:0px }
+    #experience h5 { line-height:140%; margin-bottom: 5px;}
+    h3 { margin-bottom:5px }
+    html, body { height: 100%; margin: 0; padding: 0; }
+    body { background-color: #ffffff}
+    #map { height: 60% }
+    .clock { width: 460px; margin: auto; margin-bottom: 5%; position: relative; top: 20%}
+    .background { background-size: 100% 100%; height: 100%; background-image: url("images/bg-halloween.jpg"); background-repeat: no-repeat}
+    .flip-clock-divider .flip-clock-label { font-size: 24px; color: #888888; font-family: "Creepster", "cursive"}
+    .flip-clock-divider.minutes .flip-clock-label { right: -108px }
+    .flip-clock-divider.hours .flip-clock-label { right: -98px }
+    .flip-clock-divider.days .flip-clock-label { right: -91px }
+    #puzzle {margin: auto; width: 623px}
+    #main-text {font-family: "Creepster", "cursive"; font-size: 80px; color: orange}
+    .new {font-weight: bold; font-size: 18px}
+  </style>
+
+</head>
+
+<!-- apply our angular app to our site -->
+<body style="padding-bottom:60px">
+
+  <canvas id="canvas" style="position:absolute;z-index:11;pointer-events:none;"></canvas>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Hannah's Puzzles</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="new"><a href="puzzles/1.html"><span class="label label-warning">Puzzle #1</span></a></li>
+    </ul>
+  </nav>
+
+  <div class="background">
+
+    <div id="puzzle">
+      <p id="main-text">Woooo!! Congratulations!!</p>
+
+    </div>
+    <div class="row">
+      <div class="col-xs-2">
+         <input type="text" class="form-control" placeholder=".col-xs-2">
+      </div>
+      <div class="col-xs-2">
+        <p id="output"></p>
+      </div>
+
+    </div>
+    <!-- <div id="map">
+
+    </div> -->
+
+    <!-- <div class="clock"></div> -->
+
+  </div>
+
+
+  <!-- <script type="text/javascript">
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 8
+  });
+}
+
+    </script> -->
+
+
+  <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9bMKqDOH6HMD5TZ15nb5WyCKqo_nuUEM&callback=initMap">
+  </script>
+  <script src="../js/flipclock.min.js"> </script>
+  <script src="../js/confetti.js"></script>
+</body>
+</html>
